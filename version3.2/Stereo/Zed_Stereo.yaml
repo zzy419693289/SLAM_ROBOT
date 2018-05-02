@@ -1,0 +1,104 @@
+%YAML:1.0
+
+#--------------------------------------------------------------------------------------------
+# Camera Parameters. Adjust them!
+#--------------------------------------------------------------------------------------------
+
+# Camera calibration and distortion parameters (OpenCV) 
+# 672x376
+Camera.fx: 349.842499
+Camera.fy: 349.842499
+Camera.cx: 341.119995
+Camera.cy: 194.109497
+Camera.k1: -0.17193
+Camera.k2: 0.0243182
+Camera.p1: 0.0
+Camera.p2: 0.0
+Camera.width: 672
+Camera.height: 376
+# IR projector baseline times fx (aprox.)
+Camera.bf: 42
+# Close/Far threshold. Baseline times.
+ThDepth: 166.0
+
+# 1280x720
+#Camera.fx: 699.687
+#Camera.fy: 699.687
+#Camera.cx: 652.241
+#Camera.cy: 374.219
+#Camera.k1: -0.17193
+#Camera.k2: 0.0243182
+#Camera.p1: 0.0
+#Camera.p2: 0.0
+#Camera.width: 1280
+#Camera.height: 720
+# IR projector baseline times fx (aprox.)
+#Camera.bf: 84
+# Close/Far threshold. Baseline times.
+#ThDepth: 166.0
+
+# 1920x1080
+#Camera.fx: 1399.37
+#Camera.fy: 1399.37
+#Camera.cx: 987.482
+#Camera.cy: 571.438
+#Camera.k1: -0.17193
+#Camera.k2: 0.0243182
+#Camera.p1: 0.0
+#Camera.p2: 0.0
+#Camera.width: 1920
+#Camera.height: 1080
+# IR projector baseline times fx (aprox.)
+#Camera.bf: 168
+# Close/Far threshold. Baseline times.
+#ThDepth: 166.0
+
+# Camera frames per second 
+Camera.fps: 15.0
+
+# Color order of the images (0: BGR, 1: RGB. It is ignored if images are grayscale)
+Camera.RGB: 1
+
+#--------------------------------------------------------------------------------------------
+# ORB Parameters
+#--------------------------------------------------------------------------------------------
+
+# ORB Extractor: Number of features per image
+ORBextractor.nFeatures: 1000
+
+# ORB Extractor: Scale factor between levels in the scale pyramid 	
+ORBextractor.scaleFactor: 1.2
+
+# ORB Extractor: Number of levels in the scale pyramid	
+ORBextractor.nLevels: 8
+
+# ORB Extractor: Fast threshold
+# Image is divided in a grid. At each cell FAST are extracted imposing a minimum response.
+# Firstly we impose iniThFAST. If no corners are detected we impose a lower value minThFAST
+# You can lower these values if your images have low contrast			
+ORBextractor.iniThFAST: 20
+ORBextractor.minThFAST: 7
+
+#--------------------------------------------------------------------------------------------
+# Viewer Parameters
+#--------------------------------------------------------------------------------------------
+Viewer.KeyFrameSize: 0.05
+Viewer.KeyFrameLineWidth: 1
+Viewer.GraphLineWidth: 0.9
+Viewer.PointSize: 2
+Viewer.CameraSize: 0.08
+Viewer.CameraLineWidth: 3
+Viewer.ViewpointX: 0
+Viewer.ViewpointY: -0.7
+Viewer.ViewpointZ: -1.8
+Viewer.ViewpointF: 500
+#--------------------------------------------------------------------------------------------
+# PointCloud Mapping
+#--------------------------------------------------------------------------------------------
+PointCloudMapping.Resolution: 0.05
+#--------------------------------------------------------------------------------------------
+# Global Map Coordinate
+#--------------------------------------------------------------------------------------------
+BaiduMap.Longitude: 106.465202
+BaiduMap.Latitude: 29.569003
+
