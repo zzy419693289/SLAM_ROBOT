@@ -78,10 +78,10 @@ rosrun ORB_SLAM2 RGBD /home/nvidia/catkin_ws/src/ORB_SLAM2/Vocabulary/ORBvoc.txt
 >屏蔽了将前方地图在控制台打印的代码。
 >改变/了在控制台打印对下位机的操作的字符，现在更易让人看懂了。
 #### 修复BUG：
->修复了摄像机采集程序my_rgbd.cc文件里面图像采集程序的一个小BUG，使其SL和CV矩阵传值效率更高。
->修复globalnavigator安全性BUG，我们对globalway生成和使用的地方分别加锁，防止多线程冲突。
->修复蓝牙缓存未命中导致串口接收不了数据的BUG，现在的串口使用了新的设置项，包括读取等待等。
->修复了程序停止，而小车不能停止的BUG。
+>修复了摄像机采集程序my_rgbd.cc文件里面图像采集程序的一个小BUG，使其SL和CV矩阵传值效率更高。  
+>修复globalnavigator安全性BUG，我们对globalway生成和使用的地方分别加锁，防止多线程冲突。  
+>修复蓝牙缓存未命中导致串口接收不了数据的BUG，现在的串口使用了新的设置项，包括读取等待等。  
+>修复了程序停止，而小车不能停止的BUG。  
 
 ---
 ## Verision3.0：
@@ -117,5 +117,5 @@ rosrun ORB_SLAM2 RGBD /home/nvidia/catkin_ws/src/ORB_SLAM2/Vocabulary/ORBvoc.txt
 #### 改变了串口发送指令的逻辑：
 >现在是改为last_op_down = true || wait times>4s。这种保证当上条指令如果一直未反馈后，我们也能因为指令时效超时重新发送下一条指令，减少指令卡死的状况。
 #### 修复BUG：
->修复发送指令显示的BUG。
->修复char型转换不完整的BUG。
+>修复发送指令显示的BUG。  
+>修复char型转换不完整的BUG。  
